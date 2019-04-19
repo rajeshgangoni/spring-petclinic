@@ -8,8 +8,7 @@ sh 'mvn package'
 stage('archival'){
 archive 'target/*.jar'
 }
-stage('show test result'){
-junit 'target/surefire-reports/*.xml'
 
-}
+
+
 }
